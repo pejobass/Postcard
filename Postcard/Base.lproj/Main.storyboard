@@ -99,12 +99,21 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="194" width="114" height="30"/>
+                                    <rect key="frame" x="20" y="226" width="114" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ksF-9L-yzO"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD1-Gg-JxB">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="177" width="192" height="41"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -114,6 +123,7 @@
                                 <exclude reference="Yuk-nR-zx0"/>
                                 <exclude reference="lkc-I4-Sa5"/>
                                 <exclude reference="qAo-hZ-PEi"/>
+                                <exclude reference="jD1-Gg-JxB"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -123,6 +133,7 @@
                                 <include reference="Yuk-nR-zx0"/>
                                 <include reference="lkc-I4-Sa5"/>
                                 <include reference="qAo-hZ-PEi"/>
+                                <include reference="jD1-Gg-JxB"/>
                             </mask>
                         </variation>
                     </view>
@@ -133,6 +144,7 @@
                         <outlet property="enterNameTextField" destination="Yuk-nR-zx0" id="66g-GZ-4mT"/>
                         <outlet property="mailButton" destination="qAo-hZ-PEi" id="cxK-oe-7yz"/>
                         <outlet property="messageLabel" destination="xY6-e3-Rkd" id="jj9-GZ-A63"/>
+                        <outlet property="messageLabelName" destination="jD1-Gg-JxB" id="9j0-Xb-Z1f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
